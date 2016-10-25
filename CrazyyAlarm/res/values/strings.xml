@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CrazyyAlarm</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_alarm">Alarm</string>
+    <string name="hint">Name</string>
+    <string name="SelectAll">All</string>
+    <string name="Monday">M</string>
+    <string name="Tuesday">T</string>
+    <string name="Wednesday">W</string>
+    <string name="Thursday">T</string>
+    <string name="Friday">F</string>
+    <string name="Saturday">S</string>
+    <string name="Sunday">S</string>
+    <string name="AlarmTone">Alarm Tone</string>
+    <string name="SetAlarm">Set Alarm</string>
+    <string name="title_activity_alarm_ring">AlarmRing</string>
+    <string name="title_activity_disable">Disable</string>
+    <string name="title_activity_soonze_time">SoonzeTime</string>
+    <string name="title_activity_question">Question</string>
+    <string name="title_activity_Alarm_Ringing">Alarm </string>
+    <string name="title_activity_Reminder_Ringing">Reminder</string>
+    <string name="title_activity_reminder_setting">Set Reminder</string>
+    <string name="title_activity_databsehandler">DatabaseHandler</string>
+    <string name="title_activity_registrationadapter">RegistrationAdapter</string>
+    <string name="title_activity_pendingintentid">ID</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_update_alarm">UpdateAlarm</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_update__alarm">Update_Alarm</string>
+
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.crazyyalarm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.crazyyalarm.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.CreateAlarm"
+            android:label="@string/title_activity_alarm" >
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.AlarmRing"
+            android:label="@string/title_activity_alarm_ring" >
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.SoonzeTime"
+            android:label="@string/title_activity_soonze_time" >
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.Question"
+            android:label="@string/title_activity_question" >
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.MyService"
+            android:label="@string/title_activity_Reminder_Ringing"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.example.crazyyalarm.MyService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.MyServiceAlarm"
+            android:label="@string/title_activity_Alarm_Ringing"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.example.crazyyalarm.MyServiceAlarm" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.AlertDemo"
+            android:label="@string/title_activity_Reminder_Ringing"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.example.crazyyalarm.AlertDemo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.AlertDemoAlarm"
+            android:label="@string/title_activity_Alarm_Ringing"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="com.example.crazyyalarm.AlertDemoAlarm" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.RegistrationAdapter"
+            android:label="@string/title_activity_registrationadapter" >
+        </activity>
+
+        <service android:name="com.example.crazyyalarm.MyService" >
+        </service>
+        <service android:name="com.example.crazyyalarm.MyServiceAlarm" >
+        </service>
+
+        <activity
+            android:name="com.example.crazyyalarm.ReminderSetting"
+            android:label="@string/title_activity_reminder_setting" >
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.PendingIntentID"
+            android:label="@string/title_activity_pendingintentid" >
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.UpdateAlarm"
+            android:label="@string/title_activity_update_alarm" >
+        </activity>
+        <activity
+            android:name="com.example.crazyyalarm.Update_Alarm"
+            android:label="@string/title_activity_update__alarm" >
+        </activity>
+    </application>
+
+</manifest>

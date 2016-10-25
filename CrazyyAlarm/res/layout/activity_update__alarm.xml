@@ -1,0 +1,151 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update_Alarm"
+    android:background="@drawable/background" >
+
+    <EditText
+     android:id="@+id/UpdateedittextAlarmName"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_marginTop="20dp"
+     android:ems="10"
+     android:hint="@+string/hint" />
+    
+     <TimePicker
+         android:id="@+id/UpdatetimePicker"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/edittextAlarmName"
+         android:layout_marginLeft="60dp"
+         android:layout_marginTop="5dp" />
+    
+    <Button
+        android:id="@+id/UpdatebuttonAlarmTone"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@+string/AlarmTone" />
+
+ 	<Button
+ 	    android:id="@+id/UpdatebuttonSetAlarm"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentBottom="true"
+ 	    android:layout_alignTop="@+id/buttonAlarmTone"
+ 	    android:layout_toRightOf="@+id/buttonAlarmTone"
+ 	    android:text="@+string/SetAlarm" />
+
+ 	<RadioGroup
+ 	    android:id="@+id/Updateradiogroup"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_above="@+id/linearlayoutdays"
+ 	    android:layout_alignParentLeft="true"
+ 	    android:orientation="horizontal" >
+
+ 	    <RadioButton
+ 	        android:id="@+id/UpdateradioButtonOneAlarm"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_alignParentLeft="true"
+ 	        android:layout_marginBottom="14dp"
+ 	        android:text="Single Alarm" />
+
+ 	    <RadioButton
+ 	        android:id="@+id/UpdateradioButtonRepeatingAlarm"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:text="Repeating Alarm" />
+
+ 	</RadioGroup>
+
+ 	<LinearLayout
+ 	    android:id="@+id/Updatelinearlayoutdays"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_above="@+id/buttonAlarmTone"
+ 	    android:layout_alignParentLeft="true"
+ 	    android:layout_marginBottom="15dp"
+ 	    android:layout_weight="0.72"
+ 	    android:orientation="horizontal"
+ 	    android:weightSum="1" >
+
+ 	    <CheckBox
+ 	        android:id="@+id/UpdateSelectAll"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_marginLeft="0dp"
+ 	        android:checked="false"
+ 	        android:scrollHorizontally="true"
+ 	        android:text="@string/SelectAll"
+ 	        android:textSize="10sp" />
+
+ 	    <CheckBox
+ 	        android:id="@+id/UpdateMonday"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_marginLeft="0dp"
+ 	        android:text="@string/Monday"
+ 	        android:textSize="10sp" />
+
+ 	    <CheckBox
+ 	        android:id="@+id/UpdateTuesday"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:layout_marginLeft="0dp"
+ 	        android:text="@string/Tuesday"
+ 	        android:textSize="10sp" />
+
+ 	    <CheckBox
+ 	        android:id="@+id/UpdateWednesday"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:text="@string/Wednesday"
+ 	        android:textSize="10sp" />
+
+ 	    <CheckBox
+ 	        android:id="@+id/Updatethursday"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:text="@string/Thursday"
+ 	        android:textSize="10sp" />
+
+ 	    <CheckBox
+ 	        android:id="@+id/Updatefriday"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:text="@string/Friday"
+ 	        android:textSize="10sp" />
+
+ 	    <CheckBox
+ 	        android:id="@+id/Updatesaturday"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:text="@string/Saturday"
+ 	        android:textSize="10sp" />
+
+ 	    <CheckBox
+ 	        android:id="@+id/Updatesunday"
+ 	        android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content"
+ 	        android:text="@string/Sunday"
+ 	        android:textColor="#ffff0000"
+ 	        android:textSize="10sp" />
+ 	</LinearLayout>
+
+ 	<TextView
+ 	    android:id="@+id/Updatetextadd"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_above="@+id/radiogroup"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:text="ALARM TYPE"
+ 	    android:textSize="@dimen/activity_horizontal_margin" />
+
+</RelativeLayout>
